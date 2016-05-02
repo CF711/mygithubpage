@@ -99,8 +99,8 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 150px;
+        padding-bottom: 50px;
     }
 
     header .intro-text .name {
@@ -201,7 +201,7 @@ section.success a.active {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -209,7 +209,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(70, 70, 70,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -263,7 +263,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #464646;
-    color: #262161;
+    color: #FFF;
     background: #464646;
 }
 
@@ -489,6 +489,14 @@ footer .footer-below {
     color: #FFF;
 }
 
+.twitch-outline {
+    background-color: #FFF;
+}
+
+.fa-twitch {
+    color: #64459A;
+}
+
 .github-outline {
     background-color: #FFF;
 }
@@ -501,4 +509,34 @@ footer .footer-below {
 .btn-success:hover {
     background-color: #636363;
     border-color: #636363;
+}
+
+.portfolio-text {
+    color: #FFF;
+    padding-bottom: 50px;
+}
+
+li a:focus {
+    color: #636363;
+}
+
+.navbar .navbar-nav .active a{
+    background-color: #262161;
+}
+
+.navbar .navbar-nav .active a:focus {
+    color: #636363;
+}
+
+.navbar .navbar-nav .active a:hover {
+    color: #636363;
+}
+
+.navbar .navbar-nav .active a:active {
+    color: #636363;
+}
+
+.busstop {
+    width: 223px;
+    height: 399.367px;
 }
