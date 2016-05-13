@@ -489,12 +489,17 @@ footer .footer-below {
     color: #FFF;
 }
 
-.twitch-outline {
+.fa-linkedin::before:hover {
+    color:#1985BC;
+}
+
+.hackerrank-outline {
     background-color: #FFF;
 }
 
-.fa-twitch {
+.hackerrank {
     color: #64459A;
+    background: url("img/hackerrank.png");
 }
 
 .github-outline {
@@ -520,23 +525,41 @@ li a:focus {
     color: #636363;
 }
 
-.navbar .navbar-nav .active a{
+.navbar .navbar-nav .active a {
     background-color: #262161;
+    color: #464646;
 }
 
 .navbar .navbar-nav .active a:focus {
-    color: #636363;
+    color: #464646;
+    background-color: #262161;
 }
 
 .navbar .navbar-nav .active a:hover {
-    color: #636363;
+    color: #464646;
+    background-color: #262161;
 }
 
 .navbar .navbar-nav .active a:active {
+    color: #464646;
+    background-color: #262161;
+}
+
+.navbar-default .navbar-nav li a:focus {
+    color: #636363;
+}
+
+.navbar-default .navbar-nav li a:hover {
     color: #636363;
 }
 
 .busstop {
     width: 223px;
     height: 399.367px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
 }
