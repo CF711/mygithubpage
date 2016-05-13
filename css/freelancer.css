@@ -563,3 +563,9 @@ li a:focus {
     height: 25%;
     width: 25%;
 }
+
+.fa-chevron-up {
+    position: absolute;
+    right: 14px;
+    left: 14px;
+}
