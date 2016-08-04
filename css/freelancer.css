@@ -72,6 +72,7 @@ header {
     text-align: center;
     color: #fff;
     background: #464646;
+    background-image: url("img/main_image.jpg");
 }
 
 header .container {
@@ -341,7 +342,7 @@ footer .footer-col {
 }
 
 footer .footer-below {
-    padding: 25px 0;
+    padding: 5px 0;
     background-color: #464646;
 }
 
@@ -464,6 +465,16 @@ footer .footer-below {
     border-color: #636363;
 }
 
+.btn-success:focus {
+    background-color: #636363;
+    border-color: #262161;
+}
+
+.btn-success:active:focus {
+    background-color: #636363;
+    border-color: #262161;
+}
+
 .form-control {
     color: #262161;
 }
@@ -568,4 +579,17 @@ li a:focus {
     position: absolute;
     right: 14px;
     left: 14px;
+}
+
+.social {
+    text-align: right;
+}
+
+.copyright {
+    vertical-align: 
+}
+
+.alert-success {
+    background-color: #262161;
+    border-color: #262161;
 }
