@@ -571,8 +571,8 @@ li a:focus {
 
 .img-circle {
     border-radius: 50%;
-    height: 25%;
-    width: 25%;
+    height: 50%;
+    width: 50%;
 }
 
 .fa-chevron-up {
@@ -586,7 +586,7 @@ li a:focus {
 }
 
 .copyright {
-    vertical-align: 
+    margin-top: 2em;
 }
 
 .alert-success {
