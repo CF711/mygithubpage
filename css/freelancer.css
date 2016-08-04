@@ -465,11 +465,6 @@ footer .footer-below {
     border-color: #636363;
 }
 
-.btn-success:focus {
-    background-color: #636363;
-    border-color: #262161;
-}
-
 .btn-success:active:focus {
     background-color: #636363;
     border-color: #262161;
