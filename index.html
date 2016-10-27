@@ -113,7 +113,7 @@
                         <p>If you are interested in some of my projects you can look below to see them. I have both software and non-software related projects there. Click on the links to learn more about them or click below to download my resume.</p>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <a href="content/WebDevFullStackResume.pdf" class="btn btn-lg btn-outline">
+                        <a href="content/WebDevFullStackResume.pdf" class="btn btn-lg btn-outline" id="resume-button">
                             <i class="fa fa-download"></i> Download Resume
                         </a>
                     </div>
@@ -245,7 +245,7 @@
                             <div id="success"></div>
                             <div class="row">
                                 <div class="form-group col-xs-12">
-                                    <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                    <button type="submit" class="btn btn-success btn-md" id="email-button">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -256,25 +256,28 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-center">
+    <footer>
         <div class="footer-below">
             <div class="container">
-                <div class="row copyright-row">
-                    <div class="col-lg-4 copyright">
-                        Copyright &copy; Christopher Farrell 2016
+                <div class="row">
+                    <div class="col-lg-12 footer-container">
+                        <div class="social-media-footer col-sm-6">
+                            <ul class="list-inline social-media-list">
+                                <li>
+                                    <a href="http://www.linkedin.com/in/christophermfarrell" class="btn-social btn-outline linkedin-outline"><i class="fa fa-fw fa-linkedin fa-images"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/CF711" class="btn-social btn-outline github-outline"><i class="fa fa-fw fa-github fa-images"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/CF711" class="btn-social btn-outline twitter-outline"><i class="fa fa-fw fa-twitter fa-images"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6" id="copyright">
+                            Copyright &copy; Christopher Farrell 2016
+                        </div>
                     </div>
-
-                    <ul class="list-inline col-lg-8 social">
-                            <li>
-                                <a href="http://www.linkedin.com/in/christophermfarrell" class="btn-social btn-outline linkedin-outline"><i class="fa fa-fw fa-linkedin fa-images"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/CF711" class="btn-social btn-outline github-outline"><i class="fa fa-fw fa-github fa-images"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/CF711" class="btn-social btn-outline twitter-outline"><i class="fa fa-fw fa-twitter fa-images"></i></a>
-                            </li>
-                        </ul>
                 </div>
             </div>
         </div>
@@ -287,6 +290,7 @@
         </a>
     </div>
 
+    <!-- Portfolio Modals -->
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -302,8 +306,8 @@
                         <div class="modal-body">
                             <h2>vMOF</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/vmof.png" class="img-responsive img-centered" alt="">
-                            <p>The Virtual Meeting Outcome Facilitator (vMOF) was a project that I worked on during my senior year with a team of students who were also preparing for graduation. We developed this in conjunction with The MITRE Corporation. Though a grueling process we eventually completed the project and were quite happy with how it came out. You can view our final presentation about the project, along with a live demo, <a href="https://youtu.be/dZjs6R-313A?t=45m52s">here</a>.</p>
+                            <img src="img/portfolio/vmof.png" class="img-responsive img-centered img-bordered" alt="">
+                            <p>The Virtual Meeting Outcome Facilitator (vMOF) was a project that I worked on during my senior year with a team of students who were also preparing for graduation. We developed this in conjunction with The MITRE Corporation. The intention was to make a system that could act not only as a mediator, should conflict arise, but also as the name suggests a facilitator. The activities that we created for this system aimed to accomplish those goals, whether it was helping people come up with new ideas, helping users get inside the head of the customer through an interactive empathy map, or simply helping the team decide on a direction when they were unsure of what to do next. Though it was a grueling process we eventually completed the project and were quite happy with how it came out. You can view our final presentation about the project, along with a live demo, <a href="https://youtu.be/dZjs6R-313A?t=45m52s">here</a>.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="https://www.mitre.org/">The MITRE Corporation</a>
@@ -316,7 +320,7 @@
                                     <strong>Web/Mobile Browsers</strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default modal-close-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -337,15 +341,15 @@
                         <div class="modal-body">
                             <h2>Controller Painting</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/controller.jpg" class="img-responsive img-centered" alt="">
-                            <p>I decided a while back that I wanted to do a custom controller for when I play Super Smash Bros. One day I sat down and figured out everything I needed to get to make it happen, including the process to do it. While it didn't come out perfectly, I did learn a few lessons from it. When I do one again in the future I will take those lessons into it. This will hopefully allow me to make an even better end product.</p>
+                            <img src="img/portfolio/controller.jpg" class="img-responsive img-centered img-bordered" alt="">
+                            <p>Being involved in the competitive Super Smash Bros. community, I wanted something that would help me stand out when I played. I began doing research as to how to achieve the look that I wanted for my controller and what process was involved in creating such a thing. The end result wasn't perfect. There were portions where the paint was too thick from too many layers, where paint eventually rubbed off (from missing a portion of the controller with sealer), and where paint bled over to portions that were not intended to be painted/painted that color. These lessons and others will allow me to make a better version down the road.</p>
                             <ul class="list-inline item-details">
                                 <li>Date:
                                     <strong>November 2014</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default modal-close-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -366,8 +370,8 @@
                         <div class="modal-body">
                             <h2>Bus Stop Application</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/busstop.png" class="img-responsive img-centered busstop" alt="">
-                            <p>A prototype that a team and I had created for our usability class. In an effort to better understand what users looked for when using an unfamiliar application. By performing hallway tests to ensure that we were not hitting any major problems during our prototype we were able to count it as a success. Unfortunately never made it past the prototype stage, because an application that performed the exact same actions was released by the school mere months later.</p>
+                            <img src="img/portfolio/busstop.png" class="img-responsive img-centered busstop img-bordered" alt="">
+                            <p>This was a prototype that a team and I had created for our usability class. In an effort to better understand how users interacted with an unfamiliar application and what mistakes we might be making as developers that could lead the users to not understand our applications. By performing hallway tests to ensure that we were not hitting any major problems with our major use cases we were able to count it as a success. Unfortunately never made it past the prototype stage, because an application that covered a similar user base was released by the school mere months later.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>RIT Software Engineering Department</strong>
@@ -379,7 +383,7 @@
                                     <strong>Android OS</strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default modal-close-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -400,8 +404,8 @@
                         <div class="modal-body">
                             <h2>Stream Overlay</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/overlay.jpg" class="img-responsive img-centered" alt="">
-                            <p>After noticing the lack of a good stream overlay for my local Smash Bros Community I took it upon myself to create one. While having to learn how to not only create overlays, but also work with photoshop, as I had not in a while, the project was finished. While I still look at it and notice improvements I can make, the experience of making it and working with a customer who had differing ideas of what would look good on it was ultimatly a very rewarding experience.</p>
+                            <img src="img/portfolio/overlay.jpg" class="img-responsive img-centered img-bordered" alt="">
+                            <p>In the Rochester Super Smash Bros Community there were plenty of tournaments, but they had the problem of looking amateur. I made an attempt to rectify that problem. I had to not only learn how overlays work, but also how to build one in photoshop. I kept in contact with the team out there the entire time and took their advice along with taking creative liberties of my own. I am ultimately happy with how it came out. If I was to do this again I would make a full set that they could switch between for ads and the different screens, but at the time I did not have much time to work with and could only get one screen done.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Smash the Roc/Rochester Smash Community
@@ -414,7 +418,7 @@
                                     <strong>Twitch</strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default modal-close-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -435,7 +439,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered img-bordered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -451,7 +455,7 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default modal-close-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
@@ -472,7 +476,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered img-bordered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -488,12 +492,13 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default modal-close-btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
