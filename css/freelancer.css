@@ -631,10 +631,21 @@ li a:focus {
     box-shadow: 0 6px 10px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.18);
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
     .navbar-fixed-top
     {
     position: fixed;
     top: auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-container {
+        display: initial;
+        text-align: center;
+    }
+
+    #copyright {
+        text-align: inherit;
     }
 }
