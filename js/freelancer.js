@@ -35,9 +35,3 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-$(function(){
-    $('.fa-linkedin').hover(function() {
-        $('.fa-linkedin::before').css("color", "#1985BC");
-    });
-});
